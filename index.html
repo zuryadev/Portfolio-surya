@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Developer Portfolio</title>
+    <script>
+      (function() {
+        try {
+          const originalFetch = window.fetch;
+          Object.defineProperty(window, 'fetch', {
+            get() {
+              return originalFetch;
+            },
+            set(val) {
+              console.warn("Safe wrapper: setting window.fetch is ignored to prevent TypeError.", val);
+            },
+            configurable: true,
+            enumerable: true
+          });
+        } catch (e) {
+          try {
+            Object.defineProperty(Window.prototype, 'fetch', {
+              get() {
+                return window.fetch;
+              },
+              set(val) {
+                console.warn("Safe wrapper (prototype): setting window.fetch is ignored.", val);
+              },
+              configurable: true,
+              enumerable: true
+            });
+          } catch (err) {
+            console.warn("Could not patch window.fetch setter safely:", err);
+          }
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

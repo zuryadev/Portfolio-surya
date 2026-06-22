@@ -1,0 +1,6 @@
+{
+  "name": "Developer Portfolio",
+  "description": "An interactive, high-aesthetic single-page portfolio with retro game terminal simulation, custom roadmap, and responsive projects workspace.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
