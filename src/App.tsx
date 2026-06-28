@@ -168,7 +168,7 @@ export default function App() {
                 {/* Picture wrap card */}
                 <div className="w-full h-full rounded-3xl bg-brand-charcoal border-2 border-brand-orange/20 overflow-hidden relative shadow-2xl transition-all duration-300 group-hover:border-brand-orange">
                   <img 
-                    src="\src\assets\images\me1.png" 
+                    src={avatarImage} 
                     alt="Suryadev S" 
                     className="w-full h-full object-cover grayscale opacity-90 group-hover:grayscale-0 transition-all duration-500 hover:scale-105"
                   />
