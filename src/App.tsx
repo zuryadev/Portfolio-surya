@@ -17,7 +17,7 @@ import { PERSONAL_INFO, PROJECTS, EXPERIENCES } from './data/portfolioData';
 import { Project, Experience } from './types';
 
 // Avatar generated artifact image (passed from preceding turn output)
-import avatarImage from './assets/images/portfolio_avatar_1782132245395.jpg';
+import avatarImage from './assets/images/me.png';
 
 export default function App() {
   const [activeSection, setActiveSection] = useState('profile');
@@ -168,7 +168,7 @@ export default function App() {
                 {/* Picture wrap card */}
                 <div className="w-full h-full rounded-3xl bg-brand-charcoal border-2 border-brand-orange/20 overflow-hidden relative shadow-2xl transition-all duration-300 group-hover:border-brand-orange">
                   <img 
-                    src={avatarImage} 
+                    src="\src\assets\images\me1.png" 
                     alt="Suryadev S" 
                     className="w-full h-full object-cover grayscale opacity-90 group-hover:grayscale-0 transition-all duration-500 hover:scale-105"
                   />
@@ -193,7 +193,7 @@ export default function App() {
             {/* Primary descriptive context */}
             <div className="lg:col-span-7 flex flex-col justify-center gap-5">
               <h2 className="text-3xl sm:text-4xl font-display font-medium tracking-tight text-white">
-                ABOUT <span className="text-brand-orange">SYSTEMS</span> ARCHITECTURE
+                <span className="text-brand-orange">ABOUT</span>
               </h2>
               <p className="text-sm md:text-base text-neutral-300 font-light leading-relaxed font-sans">
                 {PERSONAL_INFO.bio}
@@ -202,7 +202,7 @@ export default function App() {
               {/* Seamless, drifting multi-directional skills list carousel */}
               <div className="w-full mt-4">
                 <p className="text-xs font-mono font-bold text-brand-orange uppercase mb-3.5 flex items-center gap-2">
-                  <Code size={14} /> Code Stack Floating Environment
+                
                 </p>
                 <FloatingSkills />
               </div>
@@ -406,29 +406,20 @@ export default function App() {
           </div>
 
           {/* ================= NEW TERMINAL SUB-SECTION ================= */}
-          <div id="terminal-section" className="mt-10 flex flex-col gap-6 scroll-m-20">
-            <div className="flex flex-col gap-1.5">
-              <span className="text-xs font-mono font-bold text-[#F86D00] uppercase tracking-widest flex items-center gap-1.5">
-                <TerminalIcon size={12} /> INTERACTIVE SIMULATOR V4
-              </span>
+          <div id="terminal-section" className="mt-10 flex flex-col gap-9 scroll-m-20">
               <h3 className="text-2xl font-display font-medium text-white tracking-tight">
-                CARBON ARCADE <span className="text-brand-orange">CLI</span> ENVIRONMENT
+                FUN <span className="text-brand-orange">TERMINAL</span> ENVIRONMENT
               </h3>
-              <p className="text-sm text-neutral-400 max-w-xl font-light">
-                Launch interactive retro vector games directly inside the carbon CRT monitor. Command prompts capture key controls instantly for maximum speed.
-              </p>
-            </div>
-
             <TerminalApp />
           </div>
         </section>
 
         {/* ================= SECTION 5: CONTACT & LIVE PREVIEWS ================= */}
-        <section id="contact" className="py-10 border-t border-[#47270E]/30 pt-16 flex flex-col gap-12">
+        <section id="contact" className="py-10 border-t border-[#47270E]/30 pt-1 flex flex-col gap-2">
           <div>
-            <span className="text-xs font-mono font-bold text-[#F86D00] uppercase tracking-widest font-bold">STAY SYNCHRONIZED</span>
+            <span className="text-xs font-mono font-bold text-[#F86D00] uppercase tracking-widest font-bold">HEY!</span>
             <h2 className="text-3xl sm:text-4xl font-display font-medium text-white tracking-tight mt-1">
-              ESTABLISH <span className="text-brand-orange">CONTACT</span>
+               <span className="text-brand-orange">CONTACT</span> ME
             </h2>
           </div>
 
@@ -436,15 +427,6 @@ export default function App() {
             
             {/* Left direct channel contact list cards */}
             <div className="lg:col-span-4 flex flex-col gap-4 justify-between h-full">
-              <div className="flex flex-col gap-4">
-                <p className="text-sm text-[#F86D00] font-mono leading-relaxed uppercase tracking-wider font-semibold">
-                  DEVELOPMENT ACCESS COORDINATES
-                </p>
-                <p className="text-sm text-neutral-400 font-light leading-relaxed">
-                  Im open for new positions, architectural consultancies, or open source collaborations. Drop details across any registered system layer.
-                </p>
-              </div>
-
               <div className="space-y-3.5 mt-6 shrink-0">
                 <a 
                   id="contact-mail-link"
@@ -463,13 +445,12 @@ export default function App() {
                   href={PERSONAL_INFO.instagram}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-between p-4 bg-brand-charcoal hover:bg-[#47270E]/20 border border-[#47270E]/30 hover:border-brand-orange rounded-2xl group transition-all"
-                >
+                  className="flex items-center justify-between p-4 bg-brand-charcoal hover:bg-[#47270E]/20 border border-[#47270E]/30 hover:border-brand-orange rounded-2xl group transition-all" >
                   <div className="flex items-center gap-3">
                     <Instagram size={16} className="text-brand-orange group-hover:scale-115 transition-transform" />
                     <span className="text-xs font-mono font-bold text-neutral-300 tracking-tight uppercase">Instagram</span>
                   </div>
-                  <span className="text-xs text-neutral-400 group-hover:text-brand-orange font-light font-sans">@surya_kumar</span>
+                  <span className="text-xs text-neutral-400 group-hover:text-brand-orange font-light font-sans">@_surya_fx</span>
                 </a>
               </div>
             </div>
@@ -484,7 +465,7 @@ export default function App() {
           {/* Lower footer summary metrics */}
           <div className="pt-10 border-t border-brand-charcoal/80 flex flex-col sm:flex-row items-center justify-between gap-6 shrink-0 mt-8">
             <div className="flex flex-col text-center sm:text-left gap-1">
-              <span className="text-[10px] font-mono text-zinc-500 uppercase tracking-widest font-semibold">DISTRIBUTION LOCATION</span>
+              <span className="text-[10px] font-mono text-zinc-500 uppercase tracking-widest font-semibold">LOCATION</span>
               <p className="text-xs font-mono text-white font-bold">{PERSONAL_INFO.location}</p>
             </div>
 

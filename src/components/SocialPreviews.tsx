@@ -1,7 +1,8 @@
 import React from 'react';
 import { Github, Linkedin, ExternalLink, Calendar, GitCommit, GitPullRequest, Star, ThumbsUp, MessageSquare, Briefcase, Users, Eye, MapPin, Award } from 'lucide-react';
 import { PERSONAL_INFO } from '../data/portfolioData';
-import avatarImage from '../assets/images/portfolio_avatar_1782132245395.jpg';
+import avatarImage from '../assets/images/me.png';
+import avatarImage1 from '../assets/images/me1.png'
 
 // Simulated GitHub feed activity
 const GITHUB_FEEDS = [
@@ -75,7 +76,7 @@ export default function SocialPreviews() {
           <div className="flex items-center gap-3 min-w-0">
             <img 
               src={avatarImage} 
-              alt="Surya Kumar" 
+              alt="Suryadev " 
               className="w-10 h-10 rounded-full border border-[#30363D] object-cover shrink-0" 
             />
             <div className="min-w-0">
@@ -158,8 +159,8 @@ export default function SocialPreviews() {
           <div className="absolute -top-[35px] left-5 relative z-10">
             <div className="relative w-[70px] h-[70px]">
               <img 
-                src={avatarImage} 
-                alt="Surya Kumar" 
+                src ={avatarImage1} 
+                alt="Suryadev S" 
                 className="w-full h-full rounded-full border-[3px] border-[#1D2226] object-cover shadow-xl"
               />
               {/* Green online badge */}
