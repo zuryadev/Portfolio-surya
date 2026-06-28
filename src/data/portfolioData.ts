@@ -23,7 +23,7 @@ export const PROJECTS: Project[] = [
     tags: ["React", "HTML5 Canvas", "TypeScript", "TailwindCSS"],
     githubUrl: "https://github.com/zuryadev/Cable-Tv-Chatbot",
     linkedinUrl: "https://www.linkedin.com/in/zuryadev/",
-    thumbnail: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80"
+    thumbnail: "https://plus.unsplash.com/premium_photo-1677194598974-9b925fec1f46?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     id: "face-track",
@@ -34,7 +34,7 @@ export const PROJECTS: Project[] = [
     tags: ["React", "TypeScript", "CSS Matrix", "Canvas Game Loop"],
     githubUrl: "https://github.com/zuryadev/B-Face-tracker",
     linkedinUrl: "https://www.linkedin.com/in/zuryadev/",
-    thumbnail: "https://images.unsplash.com/photo-1542831371-29b0f74f9713?auto=format&fit=crop&w=800&q=80"
+    thumbnail: "https://plus.unsplash.com/premium_photo-1764688214084-a63d182105a3?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   }
 ];
 
